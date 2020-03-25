@@ -19,7 +19,7 @@
 - managing network infrastructure and other mission-critical system components.
 
 
- 
+
 
 SSH is significantly more secure than the other protocols such as telnet because of the encryption of the data. There are **three major encryption techniques** used by SSH:
 
@@ -33,7 +33,7 @@ SSH is significantly more secure than the other protocols such as telnet because
 - **Hashing:** One-way hashing is an authentication technique which ensures that the received data is unaltered and comes from a genuine sender. A hash function is used to generate a hash code from the data. It is impossible to regenerate the data from the hash value. The hash value is calculated at the sender as well as the receiver’s end. If the hash values match, the data is authentic.  
 
 
- 
+
 
 
  
@@ -49,7 +49,7 @@ The [ssh](https://www.ssh.com/ssh/) program on a host receives its configuration
 https://www.ssh.com/ssh/config
 
 
- 
+
 
 # SSH Keys
 
@@ -62,7 +62,7 @@ Functionally SSH keys resemble passwords. They grant access and control who can 
 Technically the keys are cryptographic keys using a [public key cryptosystem](https://www.ssh.com/cryptography). However, functionally they are authentication credentials and need to be managed as such.
 
 
- 
+
 
 ## How does authentication in SSH work?
 
@@ -84,7 +84,7 @@ Initializing a connection in SSH consists of:
 - Authenticating the user using a password, public key authentication, or other means.
 
 
- 
+
 
 ### Public key authentication
 
@@ -93,12 +93,12 @@ The key-based authentication mechanism in SSH is called [public key authenticati
 The essential thing in public key authentication is that it allows one server to access another server without having to type in a password. This powerful feature is why it is so widely used for file transfers (using the [SFTP](https://www.ssh.com/ssh/sftp/) protocol) and configuration management. It is also commonly used by system administrators for single sign-on.
 
 
- 
+
 
 https://www.ssh.com/ssh/key
 
 
- 
+
 
 ## **Changing the SSH port in the server**
 

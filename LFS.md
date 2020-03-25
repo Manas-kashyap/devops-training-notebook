@@ -157,12 +157,12 @@ You may notice From the comparison above  that **Ext4** is the **best Linux File
 The term "to mount" a filesystem in Linux refers back to the early days of computing when a tape or removable disk pack would need to be physically mounted on an appropriate drive device. After being physically placed on the drive, the filesystem on the disk pack would be logically mounted by the operating system to make the contents available for access by the OS, application programs and users.
 
 
- 
+
 
 A mount point is simply a directory, like any other, that is created as part of the root filesystem. So, for example, the home filesystem is mounted on the directory /home. Filesystems can be mounted at mount points on other non-root filesystems but this is less common.
 
 
- 
+
 
 Having the ability to mount a new storage device at any point in the directory is very advantageous. For example, lets say that you have a web site stored in /usr/local/website. The web site has become very popular and you are running out of space on your 36 GB hard drive. You can simply go out and purchase a new 73 GB hard drive, install it in the computer, and then mount that entire drive as /usr/local/. Now your /usr/local mount point has a total hard drive space of 73 GB, and you can free up the old hard drive by copying everything from the old /usr/local to the new one. As you can see, adding more hard drive space to a computer, while still keeping the same exact directory structure, is now very easy.
 
@@ -171,7 +171,7 @@ mount -t file_system_type device_to_mount directory_to_mount_to
 ```
 
 
- 
+
 
 ```
 unmount device_to_mount
@@ -223,3 +223,21 @@ x – execute and
 ```
 
 ```
+
+![](/home/knoldus/Downloads/new.png)
+
+Ques: **if everything is a file then when you use the** **ls** **command on the** **~/Desktop** **why does it not show the** **trash** **. is it a folder, must be a file but then why not show it ?**
+
+
+
+Ans: There is no .desktop file for Trash in your ~/Desktop/ directory. The **trash icon is a** ***feature*** **provided by GNOME shell and/or Nautilus**, it's probably hard-coded somewhere.
+
+………………………………………………………………………………………………………
+
+You can enable/disable this feature using gsettings/dconf. Run the following to **hide the trash icon from your desktop**
+
+gsettings set org.gnome.nautilus.desktop trash-icon-visible false
+
+
+
+**Trash’s location is ~/.local/share/Trash**
