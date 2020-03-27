@@ -44,7 +44,6 @@ writeLogsToFile () {
 ipAddr () {
 	echo "=========================================" >> output.txt
 	awk -F "http://" '{print $2}' $input | awk -F "/" '{print $1}' >> output.txt
-	rm tempFile.txt
 }
 #
 ################################################################
