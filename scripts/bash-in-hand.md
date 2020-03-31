@@ -1,6 +1,4 @@
-Bash is a Unix shell written by [Brian Fox][] for the GNU Project as a free software replacement for the [Bourne shell](https://en.wikipedia.org/wiki/Bourne_shell). It was released in 1989 and has been distributed as the Linux and macOS default shell for a long time.
-
-In this handbook, I'm going to describe the most important concepts in bash with examples. I hope this compendium will be helpful to you.
+# Bash Handbook
 
 # Shells and modes
 
