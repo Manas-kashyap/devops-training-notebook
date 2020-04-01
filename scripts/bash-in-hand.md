@@ -445,10 +445,9 @@ If we run this, we will get:
 
 ```
 $ ./my_script
-1) bower
-2) npm
-3) gem
-4) pip
+1) npm
+2) gem
+3) pip
 Choose the package manager: 2
 Enter the package name: bash-handbook
 <installing bash-handbook>
