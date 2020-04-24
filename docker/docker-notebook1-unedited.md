@@ -197,5 +197,5 @@ docker ps [show running containers]
 docker ps -a [show all i.e. exited also]
 docker rm ... [remove stopped containers]
 docker run .. -p $HOSTP:$CONTP ... [expose ports]
-docker run .. -v $HPATH:$CPATH ... [share files] Bind moun
+docker run .. -v $HPATH:$CPATH ... [share files] Bind mount
 
